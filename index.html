@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/lightbox.css">
 </head>
 
 <body>
@@ -41,14 +42,19 @@
 	      </button>
                 <div class="collapse navbar-collapse" id="ftco-nav">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a href="https://www.facebook.com/DanAstillero05/" target="_blank" class="nav-link icon d-flex align-items-center"><i class="ion-logo-facebook"></i><span class="d-lg-none ml-2">Facebook</span></a></li>
+                        <!-- <li class="nav-item"><a href="https://www.facebook.com/DanAstillero05/" target="_blank" class="nav-link icon d-flex align-items-center"><i class="ion-logo-facebook"></i><span class="d-lg-none ml-2">Facebook</span></a></li>
                         <li class="nav-item"><a href="https://www.instagram.com/astillerodan/" target="_blank" class="nav-link icon d-flex align-items-center"><i class="ion-logo-instagram"></i><span class="d-lg-none ml-2">Instagram</span></a></li>
                         <li class="nav-item"><a href="https://www.linkedin.com/in/allanadan/" target="_blank" class="nav-link icon d-flex align-items-center"><i class="ion-logo-linkedin"></i><span class="d-lg-none ml-2"> LinkedIn </span></a></li>
                         <li class="nav-item"><a href="https://wa.me/+639450928187" target="_blank" class="nav-link icon d-flex align-items-center"><i class="ion-logo-whatsapp"></i><span class="d-lg-none ml-2"> WhatsApp </span></a></li>
-                        <li class="nav-item"><a href="mailto:allandan1999@gmail.com" class="nav-link icon d-flex align-items-center"><i class="ion-ios-mail"></i><span class="d-lg-none ml-2"> Email </span></a></li>
+                        <li class="nav-item"><a href="mailto:allandan1999@gmail.com" class="nav-link icon d-flex align-items-center"><i class="ion-ios-mail"></i><span class="d-lg-none ml-2"> Email </span></a></li> -->
                         <li class="dropdown nav-item">
                             <a href="#projects" class="nav-link icon d-flex align-items-center">
                                 <i class="ion-ios-folder mr-2"></i> Projects
+                            </a>
+                        </li>
+                        <li class="dropdown nav-item">
+                            <a href="#education" class="nav-link icon d-flex align-items-center">
+                                <i class="ion-ios-school mr-2"></i> Education
                             </a>
                         </li>
                         <li class="dropdown nav-item">
@@ -75,7 +81,14 @@
                 <div class="row description align-items-center justify-content-center">
                     <div class="col-md-6 text-left">
                         <div class="text">
-                            <h2 class="mb-5" style="margin-bottom: 0%;">Hi, I'm Allan!</h2>
+                            <div class="container" style="color:white; display: inline; font-size: 2rem;">
+                                <a href="https://www.facebook.com/DanAstillero05/" target="_blank" class="icon"><i class="ion-logo-facebook"></i></a>
+                                <a href="https://www.instagram.com/astillerodan/" target="_blank" class="icon"><i class="ion-logo-instagram"></i></a>
+                                <a href="https://www.linkedin.com/in/allanadan/" target="_blank" class="icon "><i class="ion-logo-linkedin"></i></a>
+                                <a href="https://wa.me/+639450928187" target="_blank" class="icon "><i class="ion-logo-whatsapp"></i></a>
+                                <a href="mailto:allandan1999@gmail.com" class="icon"><i class="ion-ios-mail"></i></a>
+                            </div>
+                            <h2 class="mb-2" style="margin-bottom: 0%;">Hi, I'm Allan!</h2>
                             <p style="color: whitesmoke;">A graduate of BS in Information Technology at Bulacan State University, was an active student-leader, competitive and an academic achiever. I enjoy bringing ideas to life. I worked with some projects that uses Java, Arduino,
                                 HTML, CSS, JS, and PHP.</p>
                             <div class="designed d-inline-block">
@@ -88,6 +101,7 @@
                                         <button type="button" class="btn btn-dark btn-round"> Download CV </button>
                                     </a>
                                 </d>
+
                             </div>
                         </div>
                     </div>
@@ -99,7 +113,7 @@
             </div>
         </section>
 
-        <br>
+        <br><br>
 
         <section class="ftco-section bg-light" id="cards">
             <div class="container card-styles">
@@ -191,7 +205,24 @@
                 <div class="row description align-items-center justify-content-center">
                     <div class="col-md-4 text-center">
                         <div class="image-wrap">
-                            <img width="100%" src="images/image-1.jpg" alt="Round Image" class="rounded img-fluid image image-2">
+                            <!-- <img width="100%" src="images/image-1.jpg" alt="Round Image" class="rounded img-fluid image image-2"> -->
+
+                            <!-- Lightbox start -->
+                            <div class="row">
+                                <div class="column">
+                                    <img src="images/alex/login.png" style="width:100%" onclick="openModal(1);currentSlide(1)" class="hover-shadow cursor">
+                                </div>
+                                <div class="column">
+                                    <img src="images/alex/homepage.png" style="width:100%" onclick="openModal(1);currentSlide(2)" class="hover-shadow cursor">
+                                </div>
+                                <div class="column">
+                                    <img src="images/alex/mycart.png" style="width:100%" onclick="openModal(1);currentSlide(3)" class="hover-shadow cursor">
+                                </div>
+                                <div class="column">
+                                    <img src="images/alex/Checkout.png" style="width:100%" onclick="openModal(1);currentSlide(4)" class="hover-shadow cursor">
+                                </div>
+                            </div>
+                            <!-- Lightbox end -->
                         </div>
                     </div>
                     <div class="col-md-8 text-left">
@@ -207,7 +238,25 @@
                 <div class="row description align-items-center justify-content-center">
                     <div class="col-md-4 text-center">
                         <div class="image-wrap">
-                            <img width="100%" src="images/image-1.jpg" alt="Round Image" class="rounded img-fluid image image-2">
+                            <!-- <img width="100%" src="images/image-1.jpg" alt="Round Image" class="rounded img-fluid image image-2"> -->
+
+                            <!-- Lightbox start -->
+                            <div class="row">
+                                <div class="column">
+                                    <img src="images/adbms/login.png" style="width:100%" onclick="openModal(2);currentSlide(5)" class="hover-shadow cursor">
+                                </div>
+                                <div class="column">
+                                    <img src="images/adbms/homepage user.png" style="width:100%" onclick="openModal(2);currentSlide(6)" class="hover-shadow cursor">
+                                </div>
+                                <div class="column">
+                                    <img src="images/adbms/quiz.png" style="width:100%" onclick="openModal(2);currentSlide(7)" class="hover-shadow cursor">
+                                </div>
+                                <div class="column">
+                                    <img src="images/adbms/homepage.png" style="width:100%" onclick="openModal(2);currentSlide(8)" class="hover-shadow cursor">
+                                </div>
+                            </div>
+                            <!-- Lightbox end -->
+
                         </div>
                     </div>
                     <div class="col-md-8 text-left">
@@ -226,15 +275,96 @@
 
 
 
+        <div id="education">
+            <div class="container text-center">
+                <br/>
+                <br/>
+                <h2 style="color: black; font-weight: bold;">EDUCATION</h2>
+                <p class="text-muted">Here are the schools I attended</p>
+                <br/>
+                <div class="row row-cols-1 row-cols-md-3 g-4 text-left">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="images/logo/bulacan_state_university_logo.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title small">Bulacan State University</h5>
+                                <p class="card-text small">
+                                    Bachelor of Science in Information Technology
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Aug 2017 - May 2021</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="images/logo/bulacan_state_university_logo.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title small">Bulacan State University</h5>
+                                <p class="card-text small">
+                                    Associate in Computer Technology
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Aug 2017 - May 2019</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="images/logo/casifmas.jfif" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title small">Camarines Sur Institute of Fisheries and Marine Sciences</h5>
+                                <p class="card-text small">
+                                    Computer Hardware & Systems Servicing NC 2
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Jun 2015 - Apr 2016</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="images/logo/anhs.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title small">Antipolo National High School</h5>
+                                <p class="card-text small">Honorable Mention</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted ">Jun 2011 - Mar 2015</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="images/logo/103984058_10217128681509482_8790032399987383829_n.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title small">Antipolo Elementary School</h5>
+                                <p class="card-text small">Top 6 Achiever</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Jun 2005 - Apr 2011</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        <footer class="ftco-section ftco-section-2 bg-light">
+            </div>
+        </div>
+
+        <br><br>
+
+        <footer class="ftco-section ftco-section-2 bg-dark">
             <div class="col-md-12 text-center">
-                <p class="mb-0" style="color:black">
-                    Copyright &copy;
-                    <script>
-                        document.write(new Date().getFullYear());
-                    </script> All rights reserved | Allan Adan</a>
-                </p>
+                <div class="container" style="color:white; display: inline; font-size: 2rem;">
+                    <a href="https://www.facebook.com/DanAstillero05/" target="_blank" class="icon"><i class="ion-logo-facebook"></i></a>
+                    <a href="https://www.instagram.com/astillerodan/" target="_blank" class="icon"><i class="ion-logo-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/allanadan/" target="_blank" class="icon "><i class="ion-logo-linkedin"></i></a>
+                    <a href="https://wa.me/+639450928187" target="_blank" class="icon "><i class="ion-logo-whatsapp"></i></a>
+                    <a href="mailto:allandan1999@gmail.com" class="icon"><i class="ion-ios-mail"></i></a>
+                </div>
             </div>
         </footer>
 
@@ -244,21 +374,88 @@
     <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery-migrate-3.0.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.stellar.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/aos.js"></script>
+    <div id="myModal1" class="modal">
+        <div class="modal-content">
+            <span class="close cursor" onclick="closeModal(1)">&times;</span>
+            <div class="mySlides">
+                <div class="numbertext">1 / 4</div>
+                <img src="images/alex/login.png" style=" width:100% ">
+            </div>
 
-    <script src="js/nouislider.min.js"></script>
-    <script src="js/moment-with-locales.min.js"></script>
-    <script src="js/bootstrap-datetimepicker.min.js"></script>
-    <script src="js/main.js"></script>
+            <div class="mySlides ">
+                <div class="numbertext ">2 / 4</div>
+                <img src="images/alex/homepage.png " style="width:100% ">
+            </div>
+
+            <div class="mySlides ">
+                <div class="numbertext ">3 / 4</div>
+                <img src="images/alex/mycart.png " style="width:100% ">
+            </div>
+
+            <div class="mySlides ">
+                <div class="numbertext ">4 / 4</div>
+                <img src="images/alex/Checkout.png " style="width:100% ">
+            </div>
+
+            <a class="prev " onclick="plusSlides(-1) ">&#10094;</a>
+            <a class="next " onclick="plusSlides(1) ">&#10095;</a>
+
+            <div class="caption-container ">
+                <p id="caption ">E-commerce website for Alex Steel Supply</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="myModal2" class="modal">
+        <div class="modal-content">
+            <span class="close cursor" onclick="closeModal(2)">&times;</span>
+            <div class="mySlides">
+                <div class="numbertext">1 / 4</div>
+                <img src="images/adbms/login.png" style=" width:100% ">
+            </div>
+
+            <div class="mySlides ">
+                <div class="numbertext ">2 / 4</div>
+                <img src="images/adbms/homepage user.png " style="width:100% ">
+            </div>
+
+            <div class="mySlides ">
+                <div class="numbertext ">3 / 4</div>
+                <img src="images/adbms/quiz.png" style="width:100% ">
+            </div>
+
+            <div class="mySlides ">
+                <div class="numbertext ">4 / 4</div>
+                <img src="images/adbms/homepage.png" style="width:100% ">
+            </div>
+
+            <a class="prev " onclick="plusSlides(-1) ">&#10094;</a>
+            <a class="next " onclick="plusSlides(1) ">&#10095;</a>
+
+            <div class="caption-container ">
+                <p id="caption "> E-Learning Management System for BulSu </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js "></script>
+    <script src="js/jquery-migrate-3.0.1.min.js "></script>
+    <script src="js/popper.min.js "></script>
+    <script src="js/bootstrap.min.js "></script>
+    <script src="js/jquery.easing.1.3.js "></script>
+    <script src="js/jquery.waypoints.min.js "></script>
+    <script src="js/jquery.stellar.min.js "></script>
+    <script src="js/owl.carousel.min.js "></script>
+    <script src="js/jquery.magnific-popup.min.js "></script>
+    <script src="js/aos.js "></script>
+
+    <script src="js/nouislider.min.js "></script>
+    <script src="js/moment-with-locales.min.js "></script>
+    <script src="js/bootstrap-datetimepicker.min.js "></script>
+    <script src="js/main.js "></script>
+    <script src="js/lightbox.js "></script>
+
+
 
 </body>
 
