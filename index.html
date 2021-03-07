@@ -38,7 +38,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
             <div class="container">
                 <a class="navbar-brand" href="index.html"> Allan </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="true" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
                 <div class="collapse navbar-collapse" id="ftco-nav">
@@ -169,101 +169,155 @@
                 <p class="text-muted">Here are a few projects I've worked on.</p>
                 <br/>
 
-                <div class="row description align-items-center justify-content-center">
-                    <div class="col-md-4 text-center">
-                        <iframe width="100%" height="300" style="border:none;" src="https://www.youtube.com/embed/NEZY1VErysc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="col-md-8 text-left">
-                        <h5 style="font-weight: bold; color:black">CONTACTLESS FARE PAYMENT FOR MODERN JEEPNEYS</h5>
-                        <p class="text-muted">Leader, Programmer <br> Jan 2020 - Feb 2021</p>
-                        <p>A capstone project that involves Arduino and Web Development. It is a contactless payment solution for jeepneys that has an embedded device and website as the finished product. The device is a tap&go system placed near the jeepney's
-                            entrance to cater payments. On the other hand, the website caters processes payment transactions in real-time, allows a user-access to monitor their transactions, transfer money, and many more.
-                            <p> See <a href="http://jeepcard.net" target="_blank">Jeepcard Website</a> </p>
-                        </p>
-                    </div>
-                </div>
-
-                <hr>
-                <div class="row description align-items-center justify-content-center">
-                    <div class="col-md-4 text-center">
-                        <iframe width="100%" height="300" style="border:none;" src="https://www.youtube.com/embed/c79VR2PSWfA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="col-md-8 text-left">
-                        <h5 style="font-weight: bold; color:black">GRADES PORTAL APP</h5>
-                        <p class="text-muted">Leader, Programmer <br> Feb 2021 - Mar 2021</p>
-                        <p>A mobile development project that aims to cater schools, teachers, students, and parents manage their adademic grades. With the system-generated codes, the teacher may enroll at the school as well as students may enroll at each
-                            subjects.
-                        </p>
-                    </div>
-                </div>
-
-                <hr>
-                <div class="row description align-items-center justify-content-center">
-                    <div class="col-md-4 text-center">
-                        <div class="image-wrap">
-                            <!-- <img width="100%" src="images/image-1.jpg" alt="Round Image" class="rounded img-fluid image image-2"> -->
-
-                            <!-- Lightbox start -->
-                            <div class="row">
-                                <div class="column">
-                                    <img src="images/alex/login.png" style="width:100%; padding: 1rem" onclick="openModal(1);currentSlide(1)" class="hover-shadow cursor">
-                                </div>
-                                <div class="column">
-                                    <img src="images/alex/homepage.png" style="width:100%; padding: 1rem" onclick="openModal(1);currentSlide(2)" class="hover-shadow cursor">
-                                </div>
-                                <div class="column">
-                                    <img src="images/alex/mycart.png" style="width:100%; padding: 1rem" onclick="openModal(1);currentSlide(3)" class="hover-shadow cursor">
-                                </div>
-                                <div class="column">
-                                    <img src="images/alex/Checkout.png" style="width:100%; padding: 1rem" onclick="openModal(1);currentSlide(4)" class="hover-shadow cursor">
+                <div id="accordion" class="myaccordion w-100 text-center py-4 px-1 px-md-4">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="d-flex align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Contactless Fare Payment for Modern Jeepneys
+                          <i class="fa" aria-hidden="true"></i>
+                        </button>
+                            </h2>
+                        </div>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion" style="">
+                            <div class="card-body text-left">
+                                <div class="row description align-items-center justify-content-center">
+                                    <div class="col-md-4 text-center">
+                                        <iframe width="100%" height="300" style="border:none;" src="https://www.youtube.com/embed/NEZY1VErysc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="col-md-8 text-left">
+                                        <p class="text-muted">Leader, Programmer <br> Jan 2020 - Feb 2021</p>
+                                        <p>A capstone project that involves Arduino and Web Development. It is a contactless payment solution for jeepneys that has an embedded device and website as the finished product. The device is a tap&go system placed
+                                            near the jeepney's entrance to cater payments. On the other hand, the website caters processes payment transactions in real-time, allows a user-access to monitor their transactions, transfer money, and many
+                                            more.
+                                            <p> See <a href="http://jeepcard.net" target="_blank">Jeepcard Website</a> </p>
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                            <!-- Lightbox end -->
                         </div>
                     </div>
-                    <div class="col-md-8 text-left">
-                        <h5 style="font-weight: bold; color:black">E-COMMERCE WEBSITE FOR ALEX STEEL SUPPLY</h5>
-                        <p class="text-muted">Leader, Programmer <br> Jan 2019 - May 2021</p>
-                        <p>A system, analysis and design (SAD) project which solves the problem in marketing, increasing sales, and monitoring stocks, as well as deliveries from a manual system of Alex Steel Supply to a brand digital system. The project
-                            gains good feedback from the client as well as from the panel of judges.
-                        </p>
-                    </div>
-                </div>
 
-                <hr>
-                <div class="row description align-items-center justify-content-center">
-                    <div class="col-md-4 text-center">
-                        <div class="image-wrap">
-                            <!-- <img width="100%" src="images/image-1.jpg" alt="Round Image" class="rounded img-fluid image image-2"> -->
-
-                            <!-- Lightbox start -->
-                            <div class="row">
-                                <div class="column">
-                                    <img src="images/adbms/login.png" style="width:100%; padding: 1rem" onclick="openModal(2);currentSlide(5)" class="hover-shadow cursor">
-                                </div>
-                                <div class="column">
-                                    <img src="images/adbms/homepage user.png" style="width:100%; padding: 1rem" onclick="openModal(2);currentSlide(6)" class="hover-shadow cursor">
-                                </div>
-                                <div class="column">
-                                    <img src="images/adbms/quiz.png" style="width:100%; padding: 1rem" onclick="openModal(2);currentSlide(7)" class="hover-shadow cursor">
-                                </div>
-                                <div class="column">
-                                    <img src="images/adbms/homepage.png" style="width:100%; padding: 1rem" onclick="openModal(2);currentSlide(8)" class="hover-shadow cursor">
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <button class="d-flex align-items-center justify-content-between btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                          Grades Portal App
+                          <i class="fa" aria-hidden="true"></i>
+                        </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion" style="">
+                            <div class="card-body text-left">
+                                <div class="row description align-items-center justify-content-center">
+                                    <div class="col-md-4 text-center">
+                                        <iframe width="100%" height="300" style="border:none;" src="https://www.youtube.com/embed/c79VR2PSWfA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="col-md-8 text-left">
+                                        <!-- <h5 style="font-weight: bold; color:black">GRADES PORTAL APP</h5> -->
+                                        <p class="text-muted">Leader, Programmer <br> Feb 2021 - Mar 2021</p>
+                                        <p>A mobile development project that aims to cater schools, teachers, students, and parents manage their adademic grades. With the system-generated codes, the teacher may enroll at the school as well as students may
+                                            enroll at each subjects.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                            <!-- Lightbox end -->
-
                         </div>
                     </div>
-                    <div class="col-md-8 text-left">
-                        <h5 style="font-weight: bold; color:black">E-LEARNING MANAGEMENT SYSTEM</h5>
-                        <p class="text-muted">Leader, Programmer <br> Jan 2019 - May 2021</p>
-                        <p>An advanced database management system (ADBMS) project that focuses on utilizing database techniques and normalization by implementing advanced database methods to a website. You can manage users, lessons, quizzes, scores, as well
-                            as post announcements.
-                        </p>
-                    </div>
-                </div>
 
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                                <button class="d-flex align-items-center justify-content-between btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                          E-commerce Website for Alex Steel Supply
+                          <i class="fa" aria-hidden="true"></i>
+                        </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion" style="">
+                            <div class="card-body text-left">
+                                <div class="row description align-items-center justify-content-center">
+                                    <div class="col-md-4 text-center">
+                                        <div class="image-wrap">
+                                            <!-- <img width="100%" src="images/image-1.jpg" alt="Round Image" class="rounded img-fluid image image-2"> -->
+
+                                            <!-- Lightbox start -->
+                                            <div class="row">
+                                                <div class="column">
+                                                    <img src="images/alex/login.png" style="width:100%; padding: 1rem" onclick="openModal(1);currentSlide(1)" class="hover-shadow cursor">
+                                                </div>
+                                                <div class="column">
+                                                    <img src="images/alex/homepage.png" style="width:100%; padding: 1rem" onclick="openModal(1);currentSlide(2)" class="hover-shadow cursor">
+                                                </div>
+                                                <div class="column">
+                                                    <img src="images/alex/mycart.png" style="width:100%; padding: 1rem" onclick="openModal(1);currentSlide(3)" class="hover-shadow cursor">
+                                                </div>
+                                                <div class="column">
+                                                    <img src="images/alex/Checkout.png" style="width:100%; padding: 1rem" onclick="openModal(1);currentSlide(4)" class="hover-shadow cursor">
+                                                </div>
+                                            </div>
+                                            <!-- Lightbox end -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 text-left">
+                                        <!-- <h5 style="font-weight: bold; color:black">E-COMMERCE WEBSITE FOR ALEX STEEL SUPPLY</h5> -->
+                                        <p class="text-muted">Leader, Programmer <br> Jan 2019 - May 2021</p>
+                                        <p>A system, analysis and design (SAD) project which solves the problem in marketing, increasing sales, and monitoring stocks, as well as deliveries from a manual system of Alex Steel Supply to a brand digital system.
+                                            The project gains good feedback from the client as well as from the panel of judges.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingFour">
+                            <h2 class="mb-0">
+                                <button class="d-flex align-items-center justify-content-between btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                          E-Learning Management Sytem
+                          <i class="fa" aria-hidden="true"></i>
+                        </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion" style="">
+                            <div class="card-body text-left">
+                                <div class="row description align-items-center justify-content-center">
+                                    <div class="col-md-4 text-center">
+                                        <div class="image-wrap">
+                                            <!-- <img width="100%" src="images/image-1.jpg" alt="Round Image" class="rounded img-fluid image image-2"> -->
+
+                                            <!-- Lightbox start -->
+                                            <div class="row">
+                                                <div class="column">
+                                                    <img src="images/adbms/login.png" style="width:100%; padding: 1rem" onclick="openModal(2);currentSlide(5)" class="hover-shadow cursor">
+                                                </div>
+                                                <div class="column">
+                                                    <img src="images/adbms/homepage user.png" style="width:100%; padding: 1rem" onclick="openModal(2);currentSlide(6)" class="hover-shadow cursor">
+                                                </div>
+                                                <div class="column">
+                                                    <img src="images/adbms/quiz.png" style="width:100%; padding: 1rem" onclick="openModal(2);currentSlide(7)" class="hover-shadow cursor">
+                                                </div>
+                                                <div class="column">
+                                                    <img src="images/adbms/homepage.png" style="width:100%; padding: 1rem" onclick="openModal(2);currentSlide(8)" class="hover-shadow cursor">
+                                                </div>
+                                            </div>
+                                            <!-- Lightbox end -->
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 text-left">
+                                        <!-- <h5 style="font-weight: bold; color:black">E-LEARNING MANAGEMENT SYSTEM</h5> -->
+                                        <p class="text-muted">Leader, Programmer <br> Jan 2019 - May 2021</p>
+                                        <p>An advanced database management system (ADBMS) project that focuses on utilizing database techniques and normalization by implementing advanced database methods to a website. You can manage users, lessons, quizzes,
+                                            scores, as well as post announcements.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
 
